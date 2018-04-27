@@ -7,7 +7,17 @@
                                                   // Code
           
                                                 }
-    Interrupt Signal Mode: LOW , CHANGE , RISING , FALLING                                             
+    Interrupt Signal Mode: LOW , CHANGE , RISING , FALLING  
+    
+ ****************************************************
+ Circuit:
+ *********
+ Limit Switch : Comm pin to GND with 10K pull down resistor and connected to pin 2
+                Normally Open Pin (NO) is connected to VCC [ 5v ]
+ 
+ [ Limit Switch requires debouncing ]
+ 
+ LED : Cathod terminal with current limiting resistor [ 330 Ohm ] to GND and Anode terminal to pin 7
 */
 const int limitSwitch=2;
 const int LED=7;
